@@ -1,0 +1,274 @@
+!DOCTYPE html
+html lang=en
+
+head
+    meta charset=UTF-8
+    meta name=viewport content=width=device-width, initial-scale=1.0
+    titleAPP1title
+    link rel=stylesheet href=httpscdnjs.cloudflare.comajaxlibsfont-awesome6.7.2cssall.min.css
+        integrity=sha512-Evv84Mr4kqVGRNSgIGLFaIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+U6swU2Im1vVX0SVk9ABhg==
+        crossorigin=anonymous referrerpolicy=no-referrer 
+    style
+        html,
+        body {
+            margin 0;
+            padding 0;
+            width 100%;
+            height 100%;
+            overflow-x hidden;
+            box-sizing border-box;
+        }
+
+        .anchor-div a {
+            font-size 20px;
+            text-decoration none;
+            margin-right 10px;
+            color blue;
+        }
+
+        .custom-icon {
+            font-size 40px;
+            color blue;
+            transition transform 0.3s ease;
+            cursor pointer;
+            margin-top 25px;
+            margin-right 30px;
+        }
+
+        .custom-iconhover {
+            color #FFA500;
+            transform scale(1.2);
+        }
+
+        .flex-section {
+            height 60%;
+            width calc(100% - 40px);
+            display flex;
+            gap 20px;
+            margin 0 20px;
+        }
+
+        footer {
+             background-color cyan; 
+            padding 20px;
+            color black;
+            box-sizing border-box;
+        }
+
+        .footer-container {
+            display flex;
+            flex-wrap wrap;
+            justify-content space-between;
+            gap 20px;
+        }
+
+        .footer-container div {
+            flex 1;
+            min-width 200px;
+        }
+
+        .footer-container h3 {
+            margin-bottom 10px;
+        }
+
+        .footer-container p,
+        .footer-container a {
+            margin 5px 0;
+            font-size 14px;
+        }
+
+        .footer-container a {
+            color blue;
+            text-decoration none;
+        }
+
+        .footer-container ahover {
+            text-decoration underline;
+        }
+
+        .footer-container .social-media a i {
+            font-size 35px;
+             Increase the size of the icons 
+            margin 0 5px;
+             Add some spacing between icons 
+        }
+
+
+        .submit-btn {
+            height 45.5%;
+            width 10%;
+            margin-top 30px;
+            border 2px solid blue;
+            font-weight 700;
+            color blue;
+            cursor pointer;
+            position relative;
+            overflow hidden;
+            font-family Arial, sans-serif;
+            background-color white;
+        }
+
+        .submit-btnafter {
+            content '';
+            position absolute;
+            top 0;
+            left -100%;
+            width 100%;
+            height 100%;
+            background-color blue;
+            transition all 0.5s ease;
+            z-index -1;
+        }
+
+        .submit-btnhoverafter {
+            left 0;
+        }
+
+        .flex-section .box2,
+        .box1,
+        .box3 {
+            transition transform 0.3s ease;
+        }
+
+        .flex-section .box2hover,
+        .box1hover,
+        .box3hover {
+            transform scale(1.1);
+        }
+
+        .flex-section .box2 {
+            transition transform 0.3s ease;
+            position relative;
+             Ensure proper stacking 
+            z-index 1;
+             Ensure it's on top of the other boxes 
+            margin-top 0;
+             Ensure it doesn't overlap with the top box 
+            margin-bottom 0;
+             Ensure it doesn't overlap with the bottom box 
+        }
+
+        .flex-section .box2hover {
+            transform scale(1.1);
+            z-index 2;
+             Increase z-index on hover to keep it above others 
+        }
+
+        .video-btn {
+            position absolute;
+            top 80%;
+            left 50%;
+            transform translate(-50%, -50%);
+            padding 10px 20px;
+            font-size 16px;
+            background-color rgba(0, 0, 255, 0.3);
+             Semi-transparent blue 
+            color white;
+            border none;
+            border-radius 5px;
+            cursor pointer;
+            z-index 10;
+             Ensure the button is above the video 
+        }
+
+        .video-btnhover {
+            background-color rgba(0, 0, 255, 1);
+            transition transform 0.3s ease;
+        }
+
+        .submit-btnhover {
+            background-color rgba(0, 0, 255, 1);
+            color white;
+            transition transform 0.3s ease;
+            transform scale(1.1);
+            z-index 2;
+        }
+    style
+head
+
+body
+    header style=height 20%; width 100%; display flex;
+        img src=.staticpalmhouse.jpg alt=app1 logo style=height 100%; width 15%;
+
+        input type=text
+            style=height 40%; width 40%; margin-left 20px; margin-top 30px; font-size larger; font-weight 700; font-family 'Times New Roman', Times, serif; color blue; border-color blue;
+            placeholder=Search
+
+        button class=submit-btnSUBMITbutton
+
+        div class=anchor-div style=height 40%; width 30%; margin-left 20px; margin-top 40px;
+            a href=.aboutus.htmlABOUT USa
+            a href=#SERVICESa
+            a href=#FRANCHISESa
+        div
+
+        i class=fa-solid fa-bars custom-icon style=color #74C0FC;i
+    header
+
+    section class=flex-section
+        !-- div class=box1 style=flex 1; background-color #FFA500; background-imageurl(.staticbox2image.jpg); background-size cover; border-radius 1rem;div --
+        div class=box1
+            style=flex 1; background-color blueviolet; background-image url(.staticbax1image.jpg); background-size cover; border-radius 1rem; position relative; overflow hidden;
+            onmouseover=playVideo('video1') onmouseout=pauseVideo('video1')
+            video id=video1 src=.staticnightdinner.mp4 style=width 100%; height 100%; object-fit cover;
+                muted loopvideo
+            button class=video-btn type=buttonBOOKbutton
+        div
+
+        div class=box2
+            style=flex 1.5; background-color blueviolet; background-image url(.staticbax1image.jpg); background-size cover; border-radius 1rem; position relative; overflow hidden;
+            onmouseover=playVideo('video2') onmouseout=pauseVideo('video2')
+            video id=video2 src=.staticcooking.mp4 style=width 100%; height 100%; object-fit cover; muted
+                loopvideo
+            button class=video-btn type=buttonBOOKbutton
+        div
+
+        !-- div class=box3 style=flex 1; background-color cadetblue; background-image url(.staticbox3image.jpg); background-size cover; border-radius 1rem;div --
+        div class=box3
+            style=flex 1; background-color blueviolet; background-image url(.staticbax1image.jpg); background-size cover; border-radius 1rem; position relative; overflow hidden;
+            onmouseover=playVideo('video3') onmouseout=pauseVideo('video3')
+            video id=video3 src=.staticbeachnight.mp4 style=width 100%; height 100%; object-fit cover; muted
+                loopvideo
+            button class=video-btn type=buttonBOOKbutton
+        div
+    section
+
+    footer
+        div class=footer-container
+            div class=office-details
+                h3Our Officeh3
+                pCompany Namep
+                p123 Business Streetp
+                pCity, State, ZIP Codep
+                pCountryp
+            div
+            div class=contact-info
+                h3Contact Ush3
+                pPhone +1 234 567 890p
+                pEmail info@company.comp
+            div
+            div class=social-media
+                h3Follow Ush3
+                a href=#i class=fa-brands fa-square-facebook style=color #74C0FC;ia
+                a href=#i class=fa-brands fa-square-x-twitter style=color #74C0FC;ia
+                a href=#i class=fa-brands fa-linkedin style=color #74C0FC;ia
+            div
+        div
+    footer
+
+    script
+        function playVideo(videoId) {
+            const video = document.getElementById(videoId);
+            video.play();  Play the video on hover
+        }
+
+        function pauseVideo(videoId) {
+            const video = document.getElementById(videoId);
+            video.pause();  Pause the video when the cursor leaves
+        }
+
+
+    script
+body
+
+html
